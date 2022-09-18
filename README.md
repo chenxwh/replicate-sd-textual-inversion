@@ -53,7 +53,7 @@ Finetune textual_inversion from https://github.com/huggingface/diffusers/tree/ma
 ### Deploy your trained concept on Replicate and enjoy the API
 6. If all works fine, it is time to push to your replicate page so other people can try your cool concept!
 
-    First, change the `model_id` in `predict.py` with your trained concpet (same as `output_dir` from `train`). 
+    First, change the `model_id` in [`predict.py`](https://github.com/chenxwh/replicate-sd-textual-inversion/blob/main/predict.py#L15) with your trained concpet (same as `output_dir` from `train`). 
     
     Create a new [demo page](https://replicate.com/create). Follow the guide and then you will see the commond for login and push your model to your created page.
     For instance, in a new terminal, 
