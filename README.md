@@ -63,7 +63,8 @@ Finetune textual_inversion from https://github.com/huggingface/diffusers/tree/ma
     ```
     You will be prompted to provide your Replicate token after `cog login` to get permisson for pushing to the page you created.
 
-7. Once your model is pushed, you can try it on the web demo like [this here](https://replicate.com/cjwbw/sd-textual-inversion-spyro-dragon) or use the API
+    Once your model is pushed, you can try it on the web demo like [this here](https://replicate.com/cjwbw/sd-textual-inversion-spyro-dragon) or use the API
+
     ```
     import replicate
     model = replicate.models.get("cjwbw/sd-textual-inversion-spyro-dragon")
