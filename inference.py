@@ -25,4 +25,4 @@ if __name__ == "__main__":
     with torch.autocast("cuda"):
         image = pipe(args.prompt, num_inference_steps=50, guidance_scale=7.5).images[0]
 
-    image.save(args.output)
+    image.save(args.output_path)
