@@ -21,7 +21,7 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     
-    pipe = StableDiffusionPipeline.from_pretrained(model_id,torch_dtype=torch.float16).to("cuda")
+    pipe = StableDiffusionPipeline.from_pretrained(args.model_dir,torch_dtype=torch.float16).to("cuda")
     with torch.autocast("cuda"):
         image = pipe(args.prompt, num_inference_steps=50, guidance_scale=7.5).images[0]
 
