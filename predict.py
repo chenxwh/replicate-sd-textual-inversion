@@ -14,7 +14,7 @@ class Predictor(BasePredictor):
 
         model_id = "textual_inversion_spyro-dragon"
         self.pipe = StableDiffusionPipeline.from_pretrained(
-            model_id, torch_dtype=torch.float16
+            model_id, torch_dtype=torch.float16, , local_files_only=True
         ).to("cuda")
 
     @torch.inference_mode()
