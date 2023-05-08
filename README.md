@@ -46,7 +46,7 @@ Finetune textual_inversion from https://github.com/huggingface/diffusers/tree/ma
 ### Test your trained concept locally
 5. Once the concept is trained, you can test it (still in the `cog run bash` env) using this command:
     ```
-    python inference.py --model_dir <path_to_model__with_your_trained_concpet> --prompt <prompt_with_your_trained_concept> 
+    python inference.py --model_dir <path_to_model_with_your_trained_concept> --prompt <prompt_with_your_trained_concept> 
     ```
     The output should be saved at `<your_output_path>`
 
